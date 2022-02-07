@@ -1,16 +1,16 @@
 # Flask-o-WebPython
 ## Criando um website em python usando Flask
 
--------------------------------------------------------------------
-Flask é  um micro-framework,utilizado para criar APIS e sistemas mais simples , diferente do django que é mais complexo porém é mais completo , no Flask você faz cada etapa e entende o processo
--------------------------------------------------------------------
+----------------------------------------------=--------------------------------------------------------<br>
+Flask é  um micro-framework,utilizado para criar APIS e sistemas mais simples , diferente do django que é mais complexo porém é mais completo , no Flask você faz cada etapa e entende o processo<br>
+----------------------------------------------=---------------------------------------------------------<br>
 começamos com a instalação da biblioteca que iremos utilizar<br>
 --> Winndows+R <br>
 --> CMD <br>
 --> pip install Flask <br>
     ou <br>
 --> pip3 install Flask <br>
---------------------------------------------------------
+-------------------------=-------------------------------
 
 
 
