@@ -14,11 +14,39 @@ começamos com a instalação da biblioteca que iremos utilizar<br>
 
 
 
-Após a instalação do Heroku criamos um arquivo de texto chamado **profile**
-dentro do arquivo se coloca
+Após a instalação do Heroku criamos um arquivo de texto chamado **profile** sem extensão,no mesmo local em que está o código
+Dentro do arquivo se coloca:
 ```
 web: guinicorn nome do arquivo : nome do site
 ```
 ```
 Ex  web: guinicorn Flask:roadmappython
+```
+Agora que ja criamos o procfile iremos criar o requirements.txt
+```
+pip freeze > requirements.txt
+```
+É criada uma lista de tudo que foi instalado e armazena tudo nesse arquivo.txt
+
+
+-> Abrindo o CMD <-
+_Não esqueça de abrir o cmd diretamente na pasta do projeto_
+Exemplo C:\Projetos\Roadmap Python\Flask Python web
+
+Iremos fazer login na sua conta do Heroku pelo terminal
+```
+Heroku login
+```
+
+inicie o Git para seguir com os procedimentos
+```
+Git init
+```
+O Heroku necessita do Git com a sua conta logada
+Caso nao tenha cadastrado seu email e nick , siga os passos abaixo:
+```
+git config --global user.email "Seu email aqui"
+```
+```
+git config --global user.name "Seu nome de usuário aqui"
 ```
