@@ -11,9 +11,14 @@ começamos com a instalação da biblioteca que iremos utilizar<br>
     ou <br>
 --> pip3 install Flask <br>
 -------------------------=-------------------------------
+Primeiro importemos as bibliotecas que serão utilizadas:
+```
+from flask import Flask, render_template, url_for, redirect, request
+```
 
-
-
+Para iniciar o site colocamos deste modo, seguindo o que a documentação do Flask pede de padrao
+app = Flask(__name__)
+-------------------------=-------------------------------
 Após a instalação do Heroku criamos um arquivo de texto chamado **profile** sem extensão,no mesmo local em que está o código
 Dentro do arquivo se coloca:
 ```
