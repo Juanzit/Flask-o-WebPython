@@ -26,9 +26,25 @@ como eu coloco meu site no ar?
 ```
 app.run()
 ```
+Para não precisar de pausar fazer a edição e rodar denovo iremos fazer o seguinte
+estamos criando o site e ativando o debugar do site , todas as edições no site ,ele vai tentar exibir essas informações nele
+```
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+eu vou executar essa codigo que está dentro ,quando eu estiver rodando o código diretamente, 
+caso este arquivo seja importado por outro arquivo ele não roda essa linha de código.
+Como vamos fazer so localmente nao tem tanta importante , mas futuramente quando for fazer o deploy dele irá precisar , 
+então deixemos assim.
 
 Agora é só codar entre essas duas funcionalidades
-
+Definimos o route , definindo o link da homepage ex ("/") que seria a pagina inicial
+logo antes da função um decorator "@" 
+```
+@app.route("/")
+def PagPrincipal():
+    return "Hello World"
+```
 -------------------------=-------------------------------
 Após a instalação do Heroku criamos um arquivo de texto chamado **profile** sem extensão,no mesmo local em que está o código
 Dentro do arquivo se coloca:
