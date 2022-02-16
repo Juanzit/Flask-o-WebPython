@@ -5,8 +5,7 @@
 from flask import Flask, render_template, request, jsonify, url_for, redirect
 
 # Iniciando site
-app = Flask(
-    __name__, template_folder='C:\Projetos\Roadmap Python\Flask Python web\Templates')
+app = Flask(__name__, template_folder='C:\Projetos\Roadmap Python\Flask Python web\Templates')
 
 # Definindo o link da pagina
 # decorator = antes da definição da função, atribui uma nova funcionalidade para a função
