@@ -12,6 +12,13 @@ começamos com a instalação da biblioteca que iremos utilizar<br>
 --> pip3 install Flask <br>
 ----------------------------------------------=---------------------------------------------------------<br>
 Quando instalamos o flask é instalada uma subblioteca  chamada jinja, uma sintaxe especial de modelagem da web que podemos acessar através de html porque é projetada especialmente para estruturas da web python.
+
+Um comando para vermos todas as bibliotecas que baixamos por meio do pip
+```
+pip freeze > requirements.txt
+```
+
+
 Primeiro importemos as bibliotecas que serão utilizadas:
 ```
 from flask import Flask, render_template, url_for, redirect, request
@@ -39,7 +46,7 @@ então deixemos assim.
 
 Agora é só codar entre essas duas funcionalidades
 Definimos o route , definindo o link da homepage ex ("/") que seria a pagina inicial
-logo antes da função um decorator "@" 
+logo antes da função um decorator "@" que vai atribuir uma funcionalidade a função , que é de exibir na pagina
 ```
 @app.route("/")
 def PagPrincipal():
@@ -50,6 +57,9 @@ O Flask é um framework , ele exixe que você construa seu projeto de uma determ
 --> na mesma pasta que está contido o código crie uma pasta chamada Templates
 vamos criar dois arquivos um para a pagina inicial e outra para contatos
 
+
+
+O request.form.get retorna um objeto 'dicionário' para você. O objeto 'dicionário' é semelhante a outro tipo de coleção de objetos em Python, pois pode armazenar muitos elementos em um único objeto, quase como uma tupla ou uma lista.
 -------------------------=-------------------------------
 Após a instalação do Heroku criamos um arquivo de texto chamado **profile** sem extensão,no mesmo local em que está o código
 Dentro do arquivo se coloca:
